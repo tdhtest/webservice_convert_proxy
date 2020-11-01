@@ -1,0 +1,13 @@
+供前端用来开启跨域支持
+当前端对接多个厂商开发的webservice 时，可通过此工具将不规范的api标准化
+步骤：
+	1，编辑映射文件site2api.json
+	2，编辑webservice参数转换规则funsUp.js
+	3，编辑webservice返回结果转换规则funsDown.js
+	4，以上三个文件发生修改，则需要重启http服务才能加载。
+	
+测试：
+	1，运行FakeApiServer，模拟远端的webservice服务器。
+	2，运行ServletInitializer内嵌的DemoApplication
+部署：
+	1，由于日志记录不完善，建议以war包形式部署在tomcat服务器上。
